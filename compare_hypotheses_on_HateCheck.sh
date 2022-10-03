@@ -1,0 +1,35 @@
+#!/bin/bash
+# $1: path to configs directory, str
+# $2: gpu to use, int
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/Containing_HS.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/Contains_HS.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/It_is_hateful.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/It_is_hate_speech.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/It_contains_hate_speech.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/It_is_hateful_content.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/It_contains_hateful_content.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/hateful.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/hate_speech.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/That_example_contains_HS.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/That_text_contains_HS.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/This_example_contains_hateful_content.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/This_text_contains_hateful_content.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/That_example_is_hateful.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/That_text_is_hateful.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/This_example_contains_HS.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/This_text_contains_HS.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/That_contains_hateful_content.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/That_example_is_HS.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/That_text_is_HS.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/This_example_is_hateful.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/This_text_is_hateful.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/That_contains_hate_speech.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/That_is_hateful.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/This_contains_hateful_content.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/This_example_is_HS.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/This_text_is_HS.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/It_contains_HS.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/That_example_contains_hateful_content.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/That_text_contains_hateful_content.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/This_contains_hate_speech.json" -g $2
+python3 src/evaluation.py -c "${1}/zero-shot/hatecheck_compare_hypotheses/This_is_hateful.json" -g $2

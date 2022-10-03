@@ -1,0 +1,44 @@
+{
+  "description": "HSC_FBT_tge_FC_FRS, hypothesis: 'That contains hate speech.'.",
+  "path_out": "hatecheck_that_contains_HS/FBT_tge_FC_FRS_that_contains_HS.json",
+  "path_hypotheses": "hypotheses_en.json",
+  "dataset": {
+    "name": "HateCheck",
+    "path": "HateCheck/HateCheck_test.csv"
+  },
+  "predictor": {
+    "model": "facebook/bart-large-mnli"
+  },
+  "prediction_pipeline": {
+    "catch_threshold": 0.5,
+    "catchers": {
+      "HSCatcher": {
+        "hypotheses_keys": [
+          "hate",
+          "that-contains-hate-speech"
+        ],
+        "threshold": 0.5
+      }
+    },
+    "filters": {
+      "TargetFilter": {
+        "hypotheses_keys": [
+          "target_group_extended"
+        ],
+        "threshold": 0.1
+      },
+      "RecSlurFilter": {
+        "hypotheses_keys": ["rec_slur"],
+        "thresholds": {"about_others": 0.5, "neg_senti": 0.5}
+      },
+      "CSFilter": {
+        "hypotheses_keys": [
+          "stance",
+          "this-text-supports-[X]"
+        ],
+        "threshold": 0.5
+      }
+    },
+    "comb_strat": "max_catch_min_filter"
+  }
+}

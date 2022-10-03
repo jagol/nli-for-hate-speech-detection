@@ -1,0 +1,37 @@
+{
+  "description": "HSC_FBT_tc_FRS, hypothesis: 'That contains hate speech.'.",
+  "path_out": "ETHOS_Binary_that_contains_HS/FBT_tc_FRS_that_contains_HS.json",
+  "path_hypotheses": "hypotheses_en.json",
+  "dataset": {
+    "name": "ETHOS_Binary",
+    "path": "ETHOS_Binary/ETHOS_Binary_preprocessed.jsonl"
+  },
+  "predictor": {
+    "model": "facebook/bart-large-mnli"
+  },
+  "prediction_pipeline": {
+    "catch_threshold": 0.5,
+    "catchers": {
+      "HSCatcher": {
+        "hypotheses_keys": [
+          "hate",
+          "that-contains-hate-speech"
+        ],
+        "threshold": 0.5
+      }
+    },
+    "filters": {
+      "TargetFilter": {
+        "hypotheses_keys": [
+          "target_characteristics"
+        ],
+        "threshold": 0.1
+      },
+      "RecSlurFilter": {
+        "hypotheses_keys": ["rec_slur"],
+        "thresholds": {"about_others": 0.5, "neg_senti": 0.5}
+      }
+    },
+    "comb_strat": "max_catch_min_filter"
+  }
+}

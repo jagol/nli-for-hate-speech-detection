@@ -1,0 +1,25 @@
+{
+  "description": "Standard run, no strategy, hypothesis: 'That contains hate speech.'.",
+  "path_out": "hatecheck_that_contains_HS/only_HSCatcher_that_contains_HS.json",
+  "path_hypotheses": "hypotheses_en.json",
+  "dataset": {
+    "name": "HateCheck",
+    "path": "HateCheck/HateCheck_test.csv"
+  },
+  "predictor": {
+    "model": "facebook/bart-large-mnli"
+  },
+  "prediction_pipeline": {
+    "catch_threshold": 0.5,
+    "catchers": {
+      "HSCatcher": {
+        "hypotheses_keys": [
+          "hate",
+          "that-contains-hate-speech"
+        ],
+        "threshold": 0.5
+      }
+    },
+    "comb_strat": "only_HSCatcher"
+  }
+}

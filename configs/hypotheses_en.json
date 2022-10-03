@@ -1,0 +1,108 @@
+{
+  "hate": {
+    "containing-hate-speech": "Containing hate speech.",
+    "contains-hate-speech": "Contains hate speech.",
+    "hateful": "hateful",
+    "hate-speech": "hate speech",
+    "it-contains-hateful-content": "It contains hateful content.",
+    "it-contains-hate-speech": "It contains hate speech.",
+    "it-is-hateful": "It is hateful.",
+    "it-is-hate-speech": "It is hate speech.",
+    "it-is-hateful-content": "It is hateful content.",
+    "that-contains-hate-speech": "That contains hate speech.",
+    "that-contains-hateful-content": "That contains hateful content.",
+    "that-example-contains-hateful-content": "That example contains hateful content.",
+    "that-example-contains-hate-speech": "That example contains hate speech.",
+    "that-example-is-hateful": "That example is hateful.",
+    "that-example-is-hate-speech": "That example is hate speech.",
+    "that-is-hateful": "That is hateful",
+    "that-text-contains-hateful-content": "That text contains hateful content.",
+    "that-text-contains-hate-speech": "That text contains hate speech.",
+    "that-text-is-hateful": "That text is hateful.",
+    "that-text-is-hate-speech": "That text is hate speech.",
+    "this-contains-hate-speech": "This contains hate speech.",
+    "this-contains-hateful-content": "This contains hateful content.",
+    "this-example-contains-hateful-content": "This example contains hateful content.",
+    "this-example-contains-hate-speech": "This example contains hate speech.",
+    "this-example-is-hateful": "This example is hateful.",
+    "this-example-is-hate-speech": "this example is hate speech.",
+    "this-is-hateful": "This is hateful",
+    "this-text-contains-hateful-content": "This text contains hateful content.",
+    "this-text-contains-hate-speech": "This text contains hate speech.",
+    "this-text-is-hateful": "This text is hateful.",
+    "this-text-is-hate-speech": "This text is hate speech.",
+    "threat": "This text is a threat.",
+    "violence": "This text is calls for violence."
+  },
+  "target_group": {
+    "women": "This text is about women.",
+    "trans": "This text is about trans people.",
+    "gay": "This text is about gay people.",
+    "black": "This text is about black people.",
+    "disabled": "This text is about disabled people.",
+    "muslims": "This text is about Muslims.",
+    "immigrants": "This text is about immigrants."
+  },
+  "target_group_extended": {
+    "women": "This text is about women.",
+    "trans": "This text is about trans people.",
+    "queer people": "This text is about queer people.",
+    "gay": "This text is about gay people.",
+    "black": "This text is about black people.",
+    "asian people": "This text is about asian people.",
+    "people of color": "This text is about people of color.",
+    "indigenous people": "This text is about indigenous people.",
+    "disabled": "This text is about disabled people.",
+    "muslim people": "This text is about muslim people.",
+    "immigrants": "This text is about immigrants.",
+    "jewish people": "This text is about Jewish people.",
+    "christian people": "This text is about Christian people.",
+    "hindu people": "This text is about Hindu people."
+  },
+  "target_characteristics": {
+    "race": "This text is about race.",
+    "ethnicity": "This text is about ethnicity.",
+    "origin": "This text is about national origin.",
+    "religion": "This text is about religion.",
+    "gender": "This text is about gender.",
+    "sexual orientation": "This text is about sexual orientation.",
+    "disability": "This text is about disability."
+  },
+  "implicit": {
+    "insects": "This text is about insects.",
+    "apes": "This text is about apes.",
+    "primates": "This text is about primates.",
+    "rats": "This text is about rats.",
+    "plague": "This text is about a plague.",
+    "neg-senti": "This text has a negative sentiment.",
+    "groups": {
+      "women": "This text is about women.",
+      "trans": "This text is about trans people.",
+      "gay": "This text is about gay people.",
+      "black": "This text is about black people.",
+      "disabled": "This text is about disabled people.",
+      "muslims": "This text is about Muslims.",
+      "immigrants": "This text is about immigrants."
+    },
+    "characteristics": {
+      "race": "This text is about race.",
+      "ethnicity": "This text is about ethnicity.",
+      "origin": "This text is about national origin.",
+      "religion": "This text is about religion.",
+      "gender": "This text is about gender.",
+      "sexual orientation": "This text is about sexual orientation.",
+      "disability": "This text is about disability."
+    }
+  },
+  "rec_slur": {
+    "myself": "This text is about myself.",
+    "us": "This text is about us.",
+    "neg-senti": "This text has a negative sentiment."
+  },
+  "stance": {
+    "this-text-supports-[X]": "This text supports [X].",
+    "this-text-is-against-[X]": "This text is against [X].",
+    "this-text-is-contains-HS": "This text contains hate speech.",
+    "that-contains-HS": "That contains hate speech."
+  }
+}
