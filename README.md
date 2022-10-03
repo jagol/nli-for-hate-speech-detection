@@ -1,6 +1,6 @@
-# Hypothesis Engineering for Zero-Shot and Few-Shot Hate Speech Detection
+# Hypothesis Engineering for Zero-Shot Hate Speech Detection
 
-This code accompanies the paper: Hypothesis Engineering for Zero-Shot and Few-Shot Hate Speech Detection.
+This code accompanies the paper: Hypothesis Engineering for Zero-Shot Hate Speech Detection.
 
 ## Setup
 
